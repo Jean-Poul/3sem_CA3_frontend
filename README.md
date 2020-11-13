@@ -17,7 +17,7 @@
 
 2. Type: "npm install" to get the npm packages.
 
-3. Type: "npm build" to build the project.
+3. Type: "npm run build" to build the project.
 
 4. Type: "npm start" to see the how the project runs local.
 
