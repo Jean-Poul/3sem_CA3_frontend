@@ -1,9 +1,22 @@
+body {
+  background-color: rgb(224, 237, 241);
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+}
+
 ul.header {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(23, 40, 95);
 }
 
 ul.header li {
@@ -66,7 +79,7 @@ td {
 }
 ul.header li span {
   display: block;
-  color: white;
+  color: hsl(0, 0%, 100%);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
