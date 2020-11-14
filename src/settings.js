@@ -1,4 +1,6 @@
 /*
+API for Rick and Morty -> https://rickandmortyapi.com/documentation/#rest
+
 export const URL = "http://localhost:8080/CA3_Boilerplate";
 export const URLJokes = "http://localhost:8080/CA3_Boilerplate/api/jokes";
 export const URLScrapeSequential =
