@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import "./style2.css";
+import "./style1.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 import AllJokes from "./AllJokes";
 import AllScrape from "./AllScrape";
 import Login from "./Login";
 import { Switch, Route, NavLink, useHistory } from "react-router-dom";
+import Cartoon from "./Cartoon";
+import Reflection from "./Reflection";
 
 const Header = ({ isLoggedIn, loginMsg, isAdmin, loginName }) => {
   return (
@@ -13,28 +15,47 @@ const Header = ({ isLoggedIn, loginMsg, isAdmin, loginName }) => {
       <Navbar bg="dark" variant="dark" id="header">
         <Navbar.Brand href="#home">Hold E, Gruppe 8</Navbar.Brand>
         <Nav className="mr-auto">
-          <NavLink className="nav-link" exact activeClassName="selected" href="/" to="/">
+          <NavLink
+            className="nav-link"
+            exact
+            activeClassName="selected"
+            href="/"
+            to="/"
+          >
             Home
-        </NavLink>
+          </NavLink>
           <NavLink className="nav-link" activeClassName="selected" to="/jokes">
             Jokes
-        </NavLink>
+          </NavLink>
 
           {isLoggedIn && (
-            <NavLink className="nav-link" activeClassName="selected" to="/scrape" href="/scrape">
+            <NavLink
+              className="nav-link"
+              activeClassName="selected"
+              to="/scrape"
+              href="/scrape"
+            >
               Scrape
             </NavLink>
           )}
           {isAdmin && (
             <>
               <li>
-                <NavLink className="nav-link" activeClassName="selected" to="/admin">
+                <NavLink
+                  className="nav-link"
+                  activeClassName="selected"
+                  to="/admin"
+                >
                   Admin
-            </NavLink>
+                </NavLink>
               </li>
             </>
           )}
-          <NavLink className="nav-link" activeClassName="selected" to="/login-out">
+          <NavLink
+            className="nav-link"
+            activeClassName="selected"
+            to="/login-out"
+          >
             {loginMsg}
           </NavLink>
           {isLoggedIn && (
@@ -45,7 +66,6 @@ const Header = ({ isLoggedIn, loginMsg, isAdmin, loginName }) => {
             </>
           )}
         </Nav>
-
       </Navbar>
     </>
   );
@@ -54,7 +74,7 @@ const Header = ({ isLoggedIn, loginMsg, isAdmin, loginName }) => {
 export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
-  const [loginName, setLoginName] = useState('');
+  const [loginName, setLoginName] = useState("");
 
   let history = useHistory();
 
@@ -75,7 +95,7 @@ export default function App() {
         loginMsg={isLoggedIn ? "Logout" : "Login"}
         isLoggedIn={isLoggedIn}
         isAdmin={isAdmin}
-        loginName={isLoggedIn ? loginName : ''}
+        loginName={isLoggedIn ? loginName : ""}
       />
 
       <div className="content">
@@ -112,7 +132,7 @@ export default function App() {
 function Home() {
   return (
     <div className="pageContent">
-      <h2>Home</h2>
+      <Reflection />
     </div>
   );
 }
@@ -136,7 +156,7 @@ function Scrape() {
 function Admin() {
   return (
     <div className="pageContent">
-      <h2>Admin</h2>
+      <Cartoon />
     </div>
   );
 }
