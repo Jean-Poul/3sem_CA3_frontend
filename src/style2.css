@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(224, 237, 241);
+  background-color: rgb(231, 242, 245);
 }
 
 h1 {
@@ -9,6 +9,7 @@ h1 {
 
 p {
   font-family: verdana;
+  font-size: 12px;
 }
 
 ul.header {
