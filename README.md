@@ -14,5 +14,7 @@
 
 5. (Optional) You can deploy your project either on your virtual machine or thru surge. I've chosen surge since it will reduce the trafic to my virtual machine for this assignment. Start by installing surge with the following command in bash "npm install --global surge". Now you can deploy your project on surge with the command "surge --project ./build --domain A_DOMAIN_NAME.surge.sh".
 
+#### NOTE
+- To be able to see user or admin sites you will need to login with a user or admin.
 
 
