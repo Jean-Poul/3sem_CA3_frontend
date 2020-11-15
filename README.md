@@ -1,6 +1,6 @@
 # CA3 Boilerplate for frontend
 
-## DAT3SEM 
+## DATAMATIKER 3. SEMEMESTER
 
 ### Steps for setup
 
