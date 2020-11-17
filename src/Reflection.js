@@ -2,6 +2,7 @@ const Reflection = () => {
   return (
     <div>
       <h1>Home of my thoughts</h1>
+      <br />
       <p>My reflections for this project</p>
       <p>
         During this project I have learned how to make additional requests to
